@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <!-- Filtermenu 1-->
+    <!-- Filtermenu -->
     <div class="filter-sidebar">
       <h3>Filters</h3>
       <div v-for="filter in filterOptions" :key="filter.name" class="filter-group">
