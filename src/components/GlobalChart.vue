@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <!-- Filtermenu -->
+    <!-- Filtermenu 1-->
     <div class="filter-sidebar">
       <h3>Filters</h3>
       <div v-for="filter in filterOptions" :key="filter.name" class="filter-group">
@@ -167,7 +167,7 @@ scoreLabels: {
   const datasets = scores.map((score, i) => { 
     const count = (this.groupedData[score] || []).length;
     const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
-    const relativeSize = 10 + (count / maxCount) * 70;
+    const relativeSize = 10 + (count / maxCount) * 100;
     return {
       label: this.scoreLabels[score],
       data: [{
